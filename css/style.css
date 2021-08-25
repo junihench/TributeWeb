@@ -1,0 +1,189 @@
+body{
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color:#444;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+::selection {
+    background: #34495e;
+    color: white;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #6da3c0;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.navbar{
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+.navbar-nav > .nav-item >.nav-link{
+    color: #444 !important;
+    font-weight: 400;
+    
+}
+
+.nav-item{
+    padding:0 10px 0 10px;
+}
+
+/** active**/
+nav.scroll .navbar-nav > .active > a {
+  
+    color:#26739c !important;
+    border-top:1px solid #26739c;  
+    border-bottom:1px solid #26739c;
+    align-items: center !important;
+  }
+.carousel-item {
+    height: 95vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#about > .row > .col-md-4 > h5{
+    letter-spacing:2px;
+}
+
+#about > .row{
+ min-height: 100vh;
+}
+
+/* Container for skill bars */
+.container2 {
+
+    width: 330px;
+    float:left;
+    margin-top:-20px;
+    padding:0;
+    
+}
+
+li.html , .css , .js, .ng, .pangit{
+	font-size: 13px;
+  position: relative;
+  list-style: none;
+  margin-top:45px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.container2 li:before {
+    
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color:#d8dcdf ;
+  border-radius: 1000px;
+
+}
+
+.container2 li:after { 
+
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color:#8db7ce;;
+  border-radius: 1000px;
+  animation-duration: .7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+  animation-delay: 5s;
+
+}
+
+.container2 li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+
+.container2 li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 80%;
+    }
+}
+
+.container2 li.js:after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 75%;
+    }
+}
+
+.container2 li.ng:after {
+    animation-name: ng;
+}
+
+@keyframes ng {
+    to {
+        width: 60%;
+    }
+}
+
+.container2 li.pangit:after {
+    animation-name: pangit;
+}
+
+@keyframes pangit {
+    to {
+        width: 1%;
+    }
+}
+
+.pop{
+    width:30px;
+    height: auto;
+}
+
+.item{
+    border:1px solid black;
+}
